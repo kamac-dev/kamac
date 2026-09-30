@@ -1,0 +1,48 @@
+label {
+  width: max-content;
+  font-size: 16px;
+}
+
+input,
+select,
+textarea {
+  height: 40px;
+  padding: 8px 16px;
+  border: 1px solid var(--gray-regular);
+  border-radius: 8px;
+  background-color: var(--light);
+  font-size: 14px;
+}
+
+input::placeholder,
+select::placeholder,
+textarea::placeholder {
+  color: var(--gray-focused);
+}
+
+textarea {
+  height: 60px;
+}
+
+input:focus-within,
+select:focus-within,
+textarea:focus-within {
+  border-color: var(--gray-focused);
+}
+
+input[type="image"] {
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+  padding: 8px;
+}
+
+input[type="submit"] {
+  border-color: var(--primary);
+  background-color: var(--primary);
+  color: var(--light);
+}
+
+input[type="submit"]:active {
+  animation: var(--click-animation);
+}

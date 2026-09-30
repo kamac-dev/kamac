@@ -1,0 +1,36 @@
+button {
+  height: 40px;
+  width: max-content;
+  padding: 8px 12px;
+  border: 1px solid var(--gray-regular);
+  border-radius: 8px;
+  background-color: var(--light);
+  font-size: 14px;
+  text-wrap-mode: nowrap;
+  cursor: pointer;
+}
+
+button:active {
+  animation: var(--click-animation);
+}
+
+.pry-btn {
+  height: 40px;
+  padding: 8px 12px;
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+  background-color: var(--primary);
+  color: var(--light);
+  font-size: 14px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.pry-btn img {
+  filter: brightness(0) invert(1);
+}
+
+.focused-btn {
+  border-bottom: 2px solid var(--gray-focused);
+}
